@@ -4,15 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <title>Clase 1 - Formulario de tareas</title>
 </head>
 
 <body>
+    <h1>Curso de React</h1>
+    <h2>Ejercicio clase 1</h2>
+    <br>
+    <section class="formulario">
+        <form>
+            <h3>FORMULARIO DE TAREAS</h3>
+            <!-- <label for="id">ID</label> -->
+            <input class="campos" type="id" id="id" placeholder="Indique ID de la tarea">
+            <!-- <label for="titulo">Titulo</label> -->
+            <input class="campos" type="titulo" id="titulo" placeholder="Coloque el titulo de la tarea">
+            <textarea class="campos" name="descripcion" id="descripcion" cols="30" rows="10"
+                placeholder="Describa la tarea"></textarea>
+            <!-- <label for="tiempo">Tiempo</label> -->
+            <input class="campos" type="tiempo" id="tiempo" placeholder="Indique tiempo necesario">
+            <input class="campos" type="file" id="archivo" value="file">
+            <input class="campos" type="responsable" id="responsable" placeholder="Nombre del responsable">
+            <select class="campos" name="estado" id="estado">
+                <option hidden selected>Selecciona un estado</option>
+                <option class="campos" value="pendiente">Pendiente</option>
+                <option class="campos" value="en proceso">En proceso</option>
+                <option class="campos" value="en testing">En testing</option>
+                <option class="campos" value="completada">Completada</option>
+            </select>
+            <p>Estado seleccionado:</p>
+            <input class="boton" type="submit" value="Cambiar estado">
+            <input class="boton" type="reset" value="Limpiar formulario">
+        </form>
+    </section>
 
 
-
-<script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
